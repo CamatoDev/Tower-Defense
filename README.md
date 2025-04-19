@@ -48,7 +48,9 @@ Développer un **jeu de Tower Defense complet** où le joueur doit défendre un 
 
 ## 🎮 Captures d'écran
 
-*(à ajouter si tu veux des visuels de ton gameplay)*
+![alt text](<Capture d'écran 2025-04-19 112123.png>) 
+![alt text](<Capture d'écran 2025-04-19 112132.png>)
+![alt text](<Capture d'écran 2025-04-19 112328.png>)
 
 ## 🚀 Évolutions possibles
 
