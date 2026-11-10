@@ -16,10 +16,15 @@ public class Enemy : MonoBehaviour
 
     private bool isDead = false;
 
+    // Référence au composant visuel pour le hit flash
+    private EnemyVisuals visuals;
+
     public void Start()
     {
         speed = startSpeed;
         health = startHealth;
+        // GetComponent retourne null si EnemyVisuals n'est pas attaché — pas de crash
+        visuals = GetComponent<EnemyVisuals>();
     }
 
     public void TakeDammage(float amount)
@@ -27,6 +32,12 @@ public class Enemy : MonoBehaviour
         health -= amount;
 
         healthbar.fillAmount = health / startHealth;
+
+        // Feedback visuel : flash blanc bref sur l'impact
+        if (visuals != null)
+        {
+            visuals.FlashHit();
+        }
 
         if(health <= 0 && !isDead)
         {

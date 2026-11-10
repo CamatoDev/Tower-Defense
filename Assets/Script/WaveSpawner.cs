@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
+    public static WaveSpawner instance;
+
     public static int EnemiesAlive = 0;
 
     public GameManager gameManager;
@@ -23,6 +25,15 @@ public class WaveSpawner : MonoBehaviour
     private Text WaveCountdownTimer;
 
     private int waveIndex = 0;
+
+    public int TotalWaves => waves != null ? waves.Length : 0;
+    public int WavesRemaining => waves != null ? Mathf.Max(0, waves.Length - waveIndex) : 0;
+    public int CurrentWaveIndex => waveIndex;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

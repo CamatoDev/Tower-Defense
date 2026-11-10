@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 762956399}
   - component: {fileID: 762956401}
   m_Layer: 5
-  m_Name: LifesText
+  m_Name: WaveText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2918,7 +2918,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 199
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2929,7 +2929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20 LIVES
+  m_Text: VAGUES RESTANTES
 --- !u!222 &762956400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2950,7 +2950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86307182e8f4142498b71a2d878c4f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livesText: {fileID: 762956399}
+  waveText: {fileID: 762956399}
 --- !u!1 &778313896
 GameObject:
   m_ObjectHideFlags: 0
